@@ -1,0 +1,288 @@
+.footer {
+	background-color: #eef2f4;
+	&__main {
+		padding: 40px 0;
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 40px;
+		@media (max-width: 1140px) {
+			flex-wrap: wrap;
+		}
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+	}
+	&__nav {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		@media (max-width: 1140px) {
+			margin-bottom: 30px;
+		}
+	}
+	&__contacts {
+		@media (max-width: 1140px) {
+			display: none;
+		}
+		&-mobile {
+			display: none;
+			.footer__contacts-first {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+				flex: 0 1 60%;
+				@media (max-width: 768px) {
+					flex: 0 1 100%;
+					margin-bottom: 15px;
+				}
+			}
+			@media (max-width: 1140px) {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				flex-basis: 100%;
+			}
+			@media (max-width: 768px) {
+				flex-wrap: wrap;
+				.footer__info-mobile {
+					text-align: right;
+				}
+			}
+		}
+	}
+	&__phones {
+		text-align: right;
+	}
+	&__phone {
+		color: #262626;
+    	font-size: 20px;
+    	transition: .2s linear;
+    	margin-bottom: 5px;
+    	display: block;
+    	&:hover {
+    		color: #ff6d00;
+    	}
+	}
+	&__text {
+		margin-bottom: 5px;
+		font-size: 14px;
+		color: rgba(#262626, .5);
+		display: block;
+		font-weight: 500;
+		&:last-child {
+			transition: .2s linear;
+			&:hover {
+	    		color: #ff6d00;
+	    	}
+		}
+	}
+	&__address {
+		margin-bottom: 10px;
+		span {
+			display: block;
+			text-align: right;
+			font-weight: 500;
+		}
+	}
+	&__mail {
+		display: block;
+		text-align: right;
+		font-size: 14px;
+		color: rgba(#262626, .8);
+		font-weight: 500;
+		transition: .2s linear;
+		&:hover {
+    		color: #ff6d00;
+    	}
+	}
+	&__social {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 768px) {
+			justify-content: center;
+		}
+	}
+	&__bottom {
+		background-color: rgba(0, 0, 0, 0.05);
+		padding: 20px 0;
+		.container {
+			display: flex;
+			justify-content: space-between;
+			@media (max-width: 768px) {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+	}
+	&__copyright {
+		font-weight: 500;
+		@media (max-width: 1140px) {
+			font-size: 12px;
+			flex-basis: 45%;
+		}
+		@media (max-width: 768px) {
+			flex-basis: 100%;
+			text-align: center;
+		}
+	}
+	&__politic {
+		font-weight: 500;
+		color: #939495;
+		transition: .2s linear;
+		&:hover {
+			color: #ff6d00;
+		}
+	}
+}
+
+.nav-footer {
+	&__list {
+		margin-right: 130px;
+	}
+	@media (max-width: 768px) {
+		margin: 0;
+		flex: 1;
+		flex-wrap: wrap;
+	}
+}
+
+.footer-list {
+	@media (max-width: 768px) {
+		flex-basis: 50%;
+		margin: 0 0 15px 0;
+	}
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+		@media (max-width: 768px) {
+			&:not(:last-child) {
+				margin-bottom: 3px;
+			}
+		}
+	}
+	&__link {
+		color: rgba(#262626, .8);
+		font-weight: 500;
+		transition: .15s linear;
+		position: relative;
+		padding-bottom: 2px;
+		&:hover:after {
+			width: 100%;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 0;
+			height: 2px;
+			background-color: #ff6d00;
+			transition: .25s ease;
+		}
+	}
+}
+
+.social {
+	display: flex;
+	&__item {
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		&:hover {
+			animation: buttonHover .5s;
+		}
+	}
+	&__icon {
+		display: flex;
+		margin-right: 10px;
+	}
+	&__name {
+		color: #939495;
+		font-weight: 500;
+		font-size: 15px;
+		@media (max-width: 768px) {
+			font-size: 0;
+		}
+	}
+}
+
+.yandex {
+	display: flex;
+	align-items: center;
+	&__logo {
+		display: flex;
+		align-items: center;
+	}
+	&__btn {
+		display: block;
+		margin-left: 10px;
+    	border-radius: 4px;
+    	padding: 5px 10px;
+    	background-color: transparent;
+	    border: 1px solid rgba(38, 38, 38, 0.15);
+	    color: #939495;
+	    font-weight: 500;
+	    transition: .2s linear;
+	    &:hover {
+	    	color: #fff;
+	    	background-color: rgba(38, 38, 38, 0.15);
+	    }
+	}
+	@media (max-width: 1140px) {
+		display: none;
+	}
+}
+
+@keyframes buttonHover {
+	0% {
+		transform: 0;
+	}
+	20% {
+		transform: translateX(-10%);
+	}
+	40% {
+		transform: translateX(10%);
+	}
+	60% {
+		transform: translateX(-5%);
+	}
+	80% {
+		transform: translateX(5%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.yandex-mobile {
+	padding-right: 30px;
+	display: block;
+	.yandex__logo {
+		margin-bottom: 10px;
+		@media (max-width: 768px) {
+			margin: 0 10px 0 0;
+		}
+	}
+	.yandex__btn {
+		margin: 0;
+		@media (max-width: 768px) {
+			display: inline-block;
+		}
+	}
+	@media (max-width: 768px) {
+		flex: 0 0 100%;
+		padding-right: 0;
+		justify-content: center;
+	    display: flex;
+	    align-items: center;
+	}
+}

@@ -1,0 +1,82 @@
+.stocks-slider {
+	position: relative;
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -5px;
+		@media (max-width: 550px) {
+    		justify-content: center;	
+    	}
+		.product {
+			flex-basis: 24%;
+			margin: 0 5px;
+			border: 1px solid #dddddd;
+			margin-bottom: 10px;
+			@media (max-width: 1140px) {
+	    		flex-basis: 32%;
+	    	}
+	    	@media (max-width: 769px) {
+	    		flex-basis: 48%;
+	    	}
+	    	@media (max-width: 550px) {
+	    		flex-basis: 80%;
+	    	}
+		}
+	}
+	.slick-list {
+		margin-bottom: 20px;
+	}
+	.slick-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 25px;
+		li {
+			margin: 0 10px;
+			width: 30px;
+			height: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #dddddd;
+			border: 1px solid rgba(#000,.6);
+			cursor: pointer;
+			transition: .2s linear;
+			button {
+				background-color: transparent;
+				color: #000;
+				font-size: 16px;
+				cursor: pointer;
+			}
+			&.slick-active {
+				background: #ff6d00;
+			}
+		}
+	}
+	.slick-arrow {
+		background:transparent;
+		font-size: 0;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		svg {
+			fill:#ff6d00;
+			width: 22px;
+			height: 22px;
+			cursor: pointer;
+		}
+	}
+	&__prev {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	&__next {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+}

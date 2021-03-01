@@ -1,0 +1,52 @@
+.delivery {
+	&__text {
+		font-weight: 500;
+		margin-bottom: 20px;
+		@media (max-width: 768px) {
+			font-size: 12px;
+		}
+		span {
+			font-weight: 600;
+		}
+		a {
+			transition: .2s linear;
+			&:hover {
+				text-decoration: underline;
+				opacity: .8;
+			}
+		}
+	}
+	&__title {
+		font-size: 20px;
+		margin-bottom: 15px;
+		@media (max-width: 768px) {
+			font-size: 18px;
+		}
+	}
+	&__subtitle {
+		font-size: 16px;
+		font-weight: 500;
+		margin-bottom: 10px;
+		@media (max-width: 768px) {
+			font-size: 15px;
+		}
+	}
+	&__table {
+		width: 100%;
+		margin-bottom: 20px;
+		border-collapse: collapse;
+		th {
+			border: 2px solid gray;
+			padding: 20px 0;
+			font-size: 16px;
+			@media (max-width: 768px) {
+				font-size: 12px;
+				padding: 10px 0;
+			}
+		}
+	}
+}
+
+.page {
+	&__title {}
+}

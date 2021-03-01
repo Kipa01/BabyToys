@@ -1,0 +1,45 @@
+.search-result {
+	&__header {
+		margin-bottom: 25px;
+	}
+	&__request {
+		background-color: #eef2f4;
+	    border-radius: 4px;
+	    padding: 20px;
+	    margin-bottom: 15px;
+	}
+	&__label {
+		color: #4b4b4b;
+	    display: block;
+	    font-weight: 600;
+	    &:first-child {
+	    	margin: 0 0 15px 0;
+	    }
+	}
+	.header-search__form {
+		width: 100%;
+		background-color: #fff;
+	}
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -5px;	
+		@media (max-width: 768px) {
+    		justify-content: center;
+    	}
+		.product {
+			flex: 0 1 24%;
+			border: 1px solid #dddddd;
+			margin: 0 5px 10px 5px;
+			@media (max-width: 1140px) {
+    			flex-basis: 32%;
+	    	}
+	    	@media (max-width: 768px) {
+	    		flex-basis: 48%;
+	    	}
+	    	@media (max-width: 520px) {
+	    		flex-basis: 80%;
+	    	}
+		}
+	}
+}

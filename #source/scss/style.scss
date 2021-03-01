@@ -1,0 +1,125 @@
+//==========ОБНУЛЕНИЕ И ОБЩИЕ ПАРАМЕТРЫ==========//
+
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.67;
+	color: #262626;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	outline: none;
+}
+
+h1, h2, h3 h4, h5, h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+svg path {
+    stroke:inherit;
+    stroke-width:inherit;
+    fill:inherit;
+}
+
+input::placeholder {
+	color: #a6a6a6;
+}
+
+.nav-tabs__item{
+	border-bottom: 2px solid #dddddd;
+	height: 50px;
+	cursor: pointer;
+	line-height: 48px;
+    flex: 1;
+    text-align: center;
+    margin: 0 15px;
+    &.active {
+		border-color: #ff6d00;
+	}
+}
+
+.section {
+	&__title {
+		font-size: 24px;
+	    margin-bottom: 20px;
+	}
+}
+
+.page__title {
+	font-size: 30px;
+	margin-bottom: 20px;
+	line-height: 1;
+}
+
+//==========/ОБНУЛЕНИЕ И ОБЩИЕ ПАРАМЕТРЫ==========//
+
+//==========ОБОЛОЧКА==========//
+
+.wrapper {
+
+}
+
+//==========ОБОЛОЧКА==========//
+
+//==========ОСНОВНАЯ СЕТКА==========//
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+//==========/ОСНОВНАЯ СЕТКА==========//
+
+//========ПОДКЛЮЧЕНИЕ ФАЙЛОВ СО СТИЛЯМИ========//
+
+@import "blocks/header.scss";
+@import "blocks/intro.scss";
+@import "blocks/advantages.scss";
+@import "blocks/hits.scss";
+@import "blocks/info.scss";
+@import "blocks/about.scss";
+@import "blocks/footer.scss";
+@import "blocks/brands.scss";
+@import "blocks/search.scss";
+@import "blocks/static.scss";
+@import "blocks/category.scss";
+@import "blocks/delivery.scss";
+@import "blocks/stocks.scss";
+
+//========/ПОДКЛЮЧЕНИЕ ФАЙЛОВ СО СТИЛЯМИ========//

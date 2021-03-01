@@ -1,0 +1,78 @@
+.breadcrumbs {
+	padding: 15px 0;
+	&__list {
+		display: flex;
+	}
+	&__item {
+		position: relative;
+		padding-right: 30px;
+		line-height: 1.5;
+		&:after {
+			content: "";
+			position: absolute;
+			right: 5px;
+			top: 50%;
+			transform: translateY(-50%);
+			fill: #fff;
+			height: 15px;
+		    width: 20px;
+		    background:url('../../../images/icons/long-arrow-alt-right-solid.svg') no-repeat center;
+		}
+		&:last-child:after {
+			display: none;
+		}
+	}
+	&__link {
+		color: #4b4b4b;
+	    font-size: 14px;
+	    font-weight: 500;
+	    transition: .2s linear;
+	    &:hover {
+	    	text-decoration: underline;
+	    	color: rgba(blue, .7);
+	    }
+	}
+	&__current {
+		color: #4b4b4b;
+	    font-size: 14px;
+	    font-weight: 500;
+	}
+}
+
+.brands {
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		border-top: 1px solid #dddddd;
+		padding: 15px 0;
+	}
+	&__item {
+		flex-basis: 16.6%;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	margin-bottom: 10px;
+    	@media (max-width: 1140px) {
+    		flex-basis: 25%;
+    	}
+    	@media (max-width: 768px) {
+    		flex-basis: 50%;
+    	}
+	}
+	&__logo {
+    	height: 80px;
+    	width: 100px;
+    	transition: .2s linear;
+    	margin-bottom: 5px;
+    	img {
+    		max-width: 100%;
+    	}
+    	&:hover {
+    		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    	}
+	}
+	&__name {
+		color: #262626;
+		font-weight: 500;
+	}
+}
